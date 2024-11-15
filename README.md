@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/bb3041b7-1ac9-41bd-bd50-5c7ca80a3309)# 🕵️‍♂️ House Price Prediction | 아파트 실거래가 예측
+# 🕵️‍♂️ House Price Prediction | 아파트 실거래가 예측
+
+![image](https://github.com/user-attachments/assets/bb3041b7-1ac9-41bd-bd50-5c7ca80a3309)
 
 ![Python](https://img.shields.io/badge/Python-3.9-blue) <br/>
 
