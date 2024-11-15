@@ -1,117 +1,107 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/znc2XbtA)
-# House Price Prediction | 아파트 실거래가 예측
-## Team No.1
+# 🕵️‍♂️ 서울시 범죄 분석 프로젝트 (Seoul Crime Analysis)
 
+![Python](https://img.shields.io/badge/Python-3.9-blue) <br/>
+![License](https://img.shields.io/badge/License-MIT-green) <br/>
+[![Python Package using Conda](https://github.com/team-no-1/seoul-crime-analysis/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/team-no-1/seoul-crime-analysis/actions/workflows/python-package-conda.yml)<br/><br/>
+
+## 📋 목차
+- [소개](#-소개)
+- [프로젝트 특징](#-프로젝트-특징)
+- [설치 방법](#-설치-방법)
+- [사용 방법](#-사용-방법)
+- [지도 보기](#-지도-보기)
+- [프로젝트 구조](#-프로젝트-구조)
+- [결과 예시](#-결과-예시)
+  - [범죄 발생 히트맵](#-범죄-발생-히트맵)
+  - [인터랙티브 범죄 지도](#-인터랙티브-범죄-지도)
+- [라이선스](#-라이선스)
+- [팀원 소개](#-팀원-소개)<br/><br/>
+
+## 🌟 소개
+서울시의 관서별 5대 범죄 발생 및 검거 데이터를 활용하여 범죄 현황을 분석하고, 시각화 도구를 통해 인사이트를 제공하는 프로젝트입니다. 이를 통해 지역별 범죄 패턴을 파악하고, 안전한 도시 조성에 기여하고자 합니다.<br/><br/>
+
+## 🚀 프로젝트 특징
+- **데이터 수집 및 전처리**
+  - 다양한 출처의 데이터를 수집하고, 분석에 적합한 형태로 전처리합니다.
+- **데이터 통합**
+  - 범죄 데이터와 인구 데이터를 결합하여 인구 대비 범죄율을 분석합니다.
+- **데이터 분석**
+  - 검거율 계산, 정규화, 인구 대비 범죄 비율 등을 통해 심층적인 분석을 수행합니다.
+- **데이터 시각화**
+  - 히트맵과 인터랙티브 지도를 생성하여 시각적으로 이해하기 쉽게 표현합니다.
+- **모듈화된 코드 구조**
+  - 클래스별 모듈화로 유지보수와 확장성이 용이합니다.<br/><br/>
+
+## 🛠 설치 방법<br/>
+### 1. 사전 요구 사항
+- Python 3.10 이상
+- Anaconda 또는 Miniconda 설치 권장<br/>
+### 2. 저장소 클론
+
+```bash
+git clone https://github.com/team-no-1/seoul-crime-analysis.git
+cd seoul-crime-analysis
+```
+
+### 3. Conda 환경 설정
+```bash
+conda env create -f environment.yml
+conda activate seoul-crime-analysis
+```
+
+### 4. 의존성 설치
+모든 필요한 패키지는 environment.yml에 정의되어 있습니다.<br/><br/>
+
+## 📝 사용 방법
+메인 스크립트를 실행하여 데이터를 분석하고 시각화합니다:<br/><br/>
+
+## 📌 지도 보기
+seoul_crime_map.html 파일을 웹 브라우저로 열어 인터랙티브 지도를 확인하세요.<br/><br/>
+
+## 📂 프로젝트 구조
+```bash
+seoul-crime-analysis/
+├── data/
+│   ├── 관서별 5대범죄 발생 및 검거.xlsx
+│   ├── pop_kor.csv
+│   └── skorea_municipalities_geo_simple.json
+├── images/
+│   ├── seoul_skyline.jpg
+│   ├── heatmap_example.png
+│   └── map_example.png
+├── main.py
+├── modules/
+│   ├── CrimeDataLoader.py
+│   ├── CrimeDataMerger.py
+│   ├── CrimeDataAnalyzer.py
+│   └── CrimeDataVisualizer.py
+├── .gitignore
+├── environment.yml
+├── README.md
+├── LICENSE
+└── tests/
+    └── test_main.py
+```
+
+- **data/:** 데이터 파일들이 위치하는 디렉토리<br/>
+- **images/:** README 및 결과물에 사용되는 이미지<br/>
+- **modules/:** 기능별 클래스 모듈<br/>
+- **tests/:** 유닛 테스트 코드<br/><br/>
+
+## 🌈 결과 예시<br/>
+## 📊 범죄 발생 히트맵
+구별 범죄 발생 비율을 히트맵으로 표현한 예시입니다.
+<p align="center"> <img src="images/heatmap_example.png" alt="Heatmap Example" width="600"> </p>
+
+## 🗺 인터랙티브 범죄 지도
+Folium을 활용하여 제작한 서울시 범죄 현황 지도입니다.
+<p align="center"> <img src="images/map_example.png" alt="Map Example" width="600"> </p>
+
+## 📄 라이선스
+이 프로젝트는 MIT 라이선스에 따라 배포됩니다. 자세한 내용은 LICENSE 파일을 확인해주세요.<br/><br/>
+## 👥 팀원 소개
 | ![김기정](https://avatars.githubusercontent.com/u/156163982?v=4) | ![최종환](https://avatars.githubusercontent.com/u/156163982?v=4) | ![신다혜](https://avatars.githubusercontent.com/u/156163982?v=4) | ![유영신](https://avatars.githubusercontent.com/u/156163982?v=4) | ![김동완B](https://avatars.githubusercontent.com/u/156163982?v=4) |
 | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
 |            [박패캠](https://github.com/UpstageAILab)             |            [이패캠](https://github.com/UpstageAILab)             |            [최패캠](https://github.com/UpstageAILab)             |            [김패캠](https://github.com/UpstageAILab)             |            [오패캠](https://github.com/UpstageAILab)             |
 |                            팀장, 담당 역할                             |                            담당 역할                             |                            담당 역할                             |                            담당 역할                             |                            담당 역할                             |
 
-## 0. Overview
-### Environment
-- _Write Development environment_
-
-### Requirements
-- _Write Requirements_
-
-## 1. Competiton Info
-
-### Overview
-
-- House Price Prediction 경진대회는 주어진 데이터를 활용하여 서울의 아파트 실거래가를 효과적으로 예측하는 모델을 개발하는 대회입니다. 
-
-부동산은 의식주에서의 주로 중요한 요소 중 하나입니다. 이러한 부동산은 아파트 자체의 가치도 중요하고, 주변 요소 (강, 공원, 백화점 등)에 의해서도 영향을 받아 시간에 따라 가격이 많이 변동합니다. 개인에 입장에서는 더 싼 가격에 좋은 집을 찾고 싶고, 판매자의 입장에서는 적절한 가격에 집을 판매하기를 원합니다. 부동산 실거래가의 예측은 이러한 시세를 예측하여 적정한 가격에 구매와 판매를 도와주게 합니다. 그리고, 정부의 입장에서는 비정상적으로 시세가 이상한 부분을 체크하여 이상 신호를 파악하거나, 업거래 다운거래 등 부정한 거래를 하는 사람들을 잡아낼 수도 있습니다. 
-
-저희는 이러한 목적 하에서 다양한 부동산 관련 의사결정을 돕고자 하는 부동산 실거래가를 예측하는 모델을 개발하는 것입니다. 특히, 가장 중요한 서울시로 한정해서 서울시의 아파트 가격을 예측하려고합니다.
-
-### Timeline
-
-- 시작 : 2024년 11월 11일 
-- 종료 : 2024년 11월 14일
-
-## 2. Components
-
-### Directory
-
-- _Insert your directory structure_
-
-e.g.
-```
-├── code
-│   ├── jupyter_notebooks
-│   │   └── model_train.ipynb
-│   └── train.py
-├── docs
-│   ├── pdf
-│   │   └── (Template) [패스트캠퍼스] Upstage AI Lab 1기_그룹 스터디 .pptx
-│   └── paper
-└── input
-    └── data
-        ├── eval
-        └── train
-```
-
-## 3. Data descrption
-
-### Dataset overview
-
-- 주요 데이터는 .csv 형태로 제공되며, 서울시 아파트의 각 시점에서의 거래금액(만원)을 예측하는 것이 목표입니다.
-
-학습 데이터는 아래와 같이 1,118,822개이며, 예측해야 할 거래금액(target)을 포함한 52개의 아파트의 정보에 대한 변수와 거래시점에 대한 변수가 주어집니다.
-
-학습 데이터의 기간은 2007년 1월 1일부터 2023년 6월 30일까지이며, 각 변수 명이 한글로 되어있어 어떤 정보를 나타내는 변수인지 쉽게 확인할 수 있습니다.
-
-예시)
-
-시군구 : “서울특별시 강남구 개포동” 과 같이 주소에 대한 정보입니다.
-
-아파트명 : “개포더샵트리에”와 같이 아파트명에 대한 정보입니다.
-
-전용면적(㎡) : “108.2017”와 같이 매매대상의 전용면적에 대한 정보입니다.
-
-건축년도 : “2021”과 같이 아파트의 건축 연도를 나타내는 정보입니다.
-
-각 변수들은 아래와 같은 결측치 비율을 가지고 있습니다.
-
-아파트의 매매가를 결정하는데에 교통적인 요소가 영향을 줄 수 있기에 추가 데이터로 서울시 지하철역, 서울시 버스정류장의 정보가 주어집니다. 
-
-추가 데이터는 위도와 경도, 좌표 X와 좌표Y와 같이 거리에 대한 정보가 포함되어 있으며, 이를 활용하여 학습 데이터와 함께 사용할 수 있습니다. 
-
-### EDA
-
-- _Describe your EDA process and step-by-step conclusion_
-
-### Data Processing
-
-- _Describe data processing process (e.g. Data Labeling, Data Cleaning..)_
-
-## 4. Modeling
-
-### Model descrition
-
-- _Write model information and why your select this model_
-
-### Modeling Process
-
-- _Write model train and test process with capture_
-
-## 5. Result
-
-### Leader Board
-
-- _Insert Leader Board Capture_
-- _Write rank and score_
-
-### Presentation
-
-- _Insert your presentaion file(pdf) link_
-
-## etc
-
-### Meeting Log
-
-- _Insert your meeting log link like Notion or Google Docs_
-
-### Reference
-
-- _Insert related reference_
