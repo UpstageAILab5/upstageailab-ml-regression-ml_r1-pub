@@ -1,0 +1,12 @@
+name: upstageailab5-ml-regression-ml_r1
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - folium
+  - pytest
+  - flake8
