@@ -61,8 +61,8 @@ Train 데이터로 학습하여 Test 데이터의 Target 값을 예측한 RMSE �
 
 
 ## 👥 팀원 소개
-| ![김기정](images/team1.png) | ![최종환](https://avatars.githubusercontent.com/u/156163982?v=4) | ![신다혜](https://avatars.githubusercontent.com/u/156163982?v=4) | ![유영신](https://avatars.githubusercontent.com/u/156163982?v=4) | ![김동완B](https://avatars.githubusercontent.com/u/156163982?v=4) |
+| ![김기정](images/team1.png) | ![최종환](images/team2.png) | ![신다혜](images/team3.png) | ![유영신](images/team4.png) | ![김동완B](images/team5.png) |
 | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
-|            [김기정](https://github.com/UpstageAILab)             |            [최종환](https://github.com/UpstageAILab)             |            [신다혜](https://github.com/UpstageAILab)             |            [유영신](https://github.com/UpstageAILab)             |            [김동완](https://github.com/UpstageAILab)             |
+|            [김기정](https://github.com/code-squire)             |            [최종환](https://github.com/choi-jonghwan-salgabda)             |            [신다혜](https://github.com/miso2203)             |            [유영신](https://github.com/ysyou1082)             |            [김동완](https://github.com/booobing)             |
 |                            팀장, 데이터 수집 및 분석                             |                            데이터 수집 및 분석                             |                            데이터 분석 및 모델 테스트                             |                            모델 최적화 및 테스트                             |                            데이터 분석석                             |
 
