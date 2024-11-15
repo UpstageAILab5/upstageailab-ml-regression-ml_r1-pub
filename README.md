@@ -1,84 +1,49 @@
-# 🕵️‍♂️ 서울시 범죄 분석 프로젝트 (Seoul Crime Analysis)
+![image](https://github.com/user-attachments/assets/bb3041b7-1ac9-41bd-bd50-5c7ca80a3309)# 🕵️‍♂️ House Price Prediction | 아파트 실거래가 예측
 
 ![Python](https://img.shields.io/badge/Python-3.9-blue) <br/>
-![License](https://img.shields.io/badge/License-MIT-green) <br/>
-[![Python Package using Conda](https://github.com/team-no-1/seoul-crime-analysis/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/team-no-1/seoul-crime-analysis/actions/workflows/python-package-conda.yml)<br/><br/>
-
-## 📋 목차
-- [소개](#-소개)
-- [프로젝트 특징](#-프로젝트-특징)
-- [설치 방법](#-설치-방법)
-- [사용 방법](#-사용-방법)
-- [지도 보기](#-지도-보기)
-- [프로젝트 구조](#-프로젝트-구조)
-- [결과 예시](#-결과-예시)
-  - [범죄 발생 히트맵](#-범죄-발생-히트맵)
-  - [인터랙티브 범죄 지도](#-인터랙티브-범죄-지도)
-- [라이선스](#-라이선스)
-- [팀원 소개](#-팀원-소개)<br/><br/>
 
 ## 🌟 소개
-서울시의 관서별 5대 범죄 발생 및 검거 데이터를 활용하여 범죄 현황을 분석하고, 시각화 도구를 통해 인사이트를 제공하는 프로젝트입니다. 이를 통해 지역별 범죄 패턴을 파악하고, 안전한 도시 조성에 기여하고자 합니다.<br/><br/>
+서울 아파트 실거래가 예측을 위한 모델 개발을 목표로 합니다.<br/><br/>
 
 ## 🚀 프로젝트 특징
-- **데이터 수집 및 전처리**
-  - 다양한 출처의 데이터를 수집하고, 분석에 적합한 형태로 전처리합니다.
-- **데이터 통합**
-  - 범죄 데이터와 인구 데이터를 결합하여 인구 대비 범죄율을 분석합니다.
-- **데이터 분석**
-  - 검거율 계산, 정규화, 인구 대비 범죄 비율 등을 통해 심층적인 분석을 수행합니다.
-- **데이터 시각화**
-  - 히트맵과 인터랙티브 지도를 생성하여 시각적으로 이해하기 쉽게 표현합니다.
-- **모듈화된 코드 구조**
-  - 클래스별 모듈화로 유지보수와 확장성이 용이합니다.<br/><br/>
+- 부동산은 의식주에서의 주로 중요한 요소 중 하나입니다. 이러한 부동산은 아파트 자체의 가치도 중요하고, 주변 요소 (강, 공원, 백화점 등)에 의해서도 영향을 받아 시간에 따라 가격이 많이 변동합니다. 개인에 입장에서는 더 싼 가격에 좋은 집을 찾고 싶고, 판매자의 입장에서는 적절한 가격에 집을 판매하기를 원합니다. 부동산 실거래가의 예측은 이러한 시세를 예측하여 적정한 가격에 구매와 판매를 도와주게 합니다. 그리고, 정부의 입장에서는 비정상적으로 시세가 이상한 부분을 체크하여 이상 신호를 파악하거나, 업거래 다운거래 등 부정한 거래를 하는 사람들을 잡아낼 수도 있습니다. 
 
-## 🛠 설치 방법<br/>
-### 1. 사전 요구 사항
-- Python 3.10 이상
-- Anaconda 또는 Miniconda 설치 권장<br/>
-### 2. 저장소 클론
+저희는 이러한 목적 하에서 다양한 부동산 관련 의사결정을 돕고자 하는 부동산 실거래가를 예측하는 모델을 개발하는 것입니다. 특히, 가장 중요한 서울시로 한정해서 서울시의 아파트 가격을 예측하려고합니다.<br/><br/>
 
-```bash
-git clone https://github.com/team-no-1/seoul-crime-analysis.git
-cd seoul-crime-analysis
-```
+- input : 9,272개의 아파트 특징 및 거래정보
+- output : 9,272개의 input에 대한 예상 아파트 거래금액
 
-### 3. Conda 환경 설정
-```bash
-conda env create -f environment.yml
-conda activate seoul-crime-analysis
-```
-
-### 4. 의존성 설치
+<p align="center"> <img src="images/1.png" alt="1" width="600"> </p>
+  
+### 📌 의존성 설치
 모든 필요한 패키지는 environment.yml에 정의되어 있습니다.<br/><br/>
 
 ## 📝 사용 방법
 메인 스크립트를 실행하여 데이터를 분석하고 시각화합니다:<br/><br/>
 
-## 📌 지도 보기
-seoul_crime_map.html 파일을 웹 브라우저로 열어 인터랙티브 지도를 확인하세요.<br/><br/>
-
 ## 📂 프로젝트 구조
 ```bash
 seoul-crime-analysis/
 ├── data/
-│   ├── 관서별 5대범죄 발생 및 검거.xlsx
-│   ├── pop_kor.csv
-│   └── skorea_municipalities_geo_simple.json
+│   ├── interest_rate.xlsx
+│   ├── bus.csv
+│   ├── train.csv
+│   ├── test.csv
+│   └── output_final_v2.csv
 ├── images/
-│   ├── seoul_skyline.jpg
-│   ├── heatmap_example.png
-│   └── map_example.png
-├── main.py
+│   ├── 1.jpg
+│   ├── team1.png
+│   ├── team2.png
+│   ├── team3.png
+│   ├── team4.png
+│   ├── team5.png
+│   └── result.png
 ├── modules/
-│   ├── CrimeDataLoader.py
-│   ├── CrimeDataMerger.py
-│   ├── CrimeDataAnalyzer.py
-│   └── CrimeDataVisualizer.py
+│   ├── main_final.py
+│   └── real_estate_final.ipynb
 ├── .gitignore
 ├── environment.yml
 ├── README.md
-├── LICENSE
 └── tests/
     └── test_main.py
 ```
@@ -89,19 +54,14 @@ seoul-crime-analysis/
 - **tests/:** 유닛 테스트 코드<br/><br/>
 
 ## 🌈 결과 예시<br/>
-## 📊 범죄 발생 히트맵
-구별 범죄 발생 비율을 히트맵으로 표현한 예시입니다.
-<p align="center"> <img src="images/heatmap_example.png" alt="Heatmap Example" width="600"> </p>
+## 📊 RMSE 결과값
+Train 데이터로 학습하여 Test 데이터의 Target 값을 예측한 RMSE 값
+<p align="center"> <img src="images/result.png" alt="result" width="600"> </p>
 
-## 🗺 인터랙티브 범죄 지도
-Folium을 활용하여 제작한 서울시 범죄 현황 지도입니다.
-<p align="center"> <img src="images/map_example.png" alt="Map Example" width="600"> </p>
 
-## 📄 라이선스
-이 프로젝트는 MIT 라이선스에 따라 배포됩니다. 자세한 내용은 LICENSE 파일을 확인해주세요.<br/><br/>
 ## 👥 팀원 소개
 | ![김기정](https://avatars.githubusercontent.com/u/156163982?v=4) | ![최종환](https://avatars.githubusercontent.com/u/156163982?v=4) | ![신다혜](https://avatars.githubusercontent.com/u/156163982?v=4) | ![유영신](https://avatars.githubusercontent.com/u/156163982?v=4) | ![김동완B](https://avatars.githubusercontent.com/u/156163982?v=4) |
 | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
-|            [박패캠](https://github.com/UpstageAILab)             |            [이패캠](https://github.com/UpstageAILab)             |            [최패캠](https://github.com/UpstageAILab)             |            [김패캠](https://github.com/UpstageAILab)             |            [오패캠](https://github.com/UpstageAILab)             |
-|                            팀장, 담당 역할                             |                            담당 역할                             |                            담당 역할                             |                            담당 역할                             |                            담당 역할                             |
+|            [김기정](https://github.com/UpstageAILab)             |            [최종환](https://github.com/UpstageAILab)             |            [신다혜](https://github.com/UpstageAILab)             |            [유영신](https://github.com/UpstageAILab)             |            [김동완](https://github.com/UpstageAILab)             |
+|                            팀장, 데이터 수집 및 분석                             |                            데이터 수집 및 분석                             |                            데이터 분석 및 모델 테스트                             |                            모델 최적화 및 테스트                             |                            데이터 분석석                             |
 
