@@ -27,7 +27,6 @@ upstageailab5-ml-regression-ml_r1/
 ├── data/
 │   ├── interest_rate.csv
 │   ├── bus_feature.csv
-│   ├── subway_feature.csv
 │   └── output_final_v2.csv
 ├── images/
 │   ├── 1.jpg
