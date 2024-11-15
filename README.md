@@ -23,10 +23,11 @@
 
 ## 📂 프로젝트 구조
 ```bash
-seoul-crime-analysis/
+upstageailab5-ml-regression-ml_r1/
 ├── data/
-│   ├── interest_rate.xlsx
-│   ├── bus.csv
+│   ├── interest_rate.csv
+│   ├── bus_feature.csv
+│   ├── subway_feature.csv
 │   ├── train.csv
 │   ├── test.csv
 │   └── output_final_v2.csv
