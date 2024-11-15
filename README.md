@@ -28,8 +28,6 @@ upstageailab5-ml-regression-ml_r1/
 │   ├── interest_rate.csv
 │   ├── bus_feature.csv
 │   ├── subway_feature.csv
-│   ├── train.csv
-│   ├── test.csv
 │   └── output_final_v2.csv
 ├── images/
 │   ├── 1.jpg
@@ -53,6 +51,9 @@ upstageailab5-ml-regression-ml_r1/
 - **images/:** README 및 결과물에 사용되는 이미지<br/>
 - **modules/:** 기능별 클래스 모듈<br/>
 - **tests/:** 유닛 테스트 코드<br/><br/>
+
+- **국토교통부 실거래가 : 정부 3.0 및 공공데이터 개방/:** [(https://rt.molit.go.kr/pre.html)]
+- **서울시 공공주택 아파트 정보 : CC BY/:** [(https://data.seoul.go.kr/dataList/OA-15818/S/1/datasetView.do)]
 
 ## 🌈 결과 예시<br/>
 ## 📊 RMSE 결과값
